@@ -68,6 +68,12 @@ const tags = (
 
 在里面定义一个函数并执行。
 
+还可以动态引用组件， tagName 为一个变量：
+~~~javascript
+var MyCmp = 'Header'; // 变量名第一个字母必须为大写
+var tags = <MyCmp />; // 最终实际引用的是 Header 组件
+~~~
+
 ## 组件名称
 
 在 react 中，定义的组件名称必须使用 **大写** 开头，否则在 jsx 中使用的时候，会当作一个普通的 html 标签直接输出到页面，不会进行任何转换。
