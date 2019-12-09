@@ -19,3 +19,13 @@ npm config set registry https://registry.npm.taobao.org
 
 
 cnpm 是淘宝的 npm 镜像，官网是 <http://npm.taobao.org/>
+
+# 在 PowerShell 下执行脚本错误
+
+现在一般使用 **ps** 来执行命令行，但是在使用 npm 安装一个工具后再执行命令，会发现有安全错误，这个是因为 ps 默认情况下是禁止从远程下载脚本来执行，需要修改一下 ps 的安全设置：
+
+~~~text
+Set-ExecutionPolicy RemoteSigned
+~~~
+
+> 注意：必须使用管理员模式运行才能执行此命令。
