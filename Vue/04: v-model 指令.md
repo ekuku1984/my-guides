@@ -14,6 +14,7 @@ v-model 属性，是个语法糖，最终在标签上生成的是这样子的：
 如果在自定义组件上使用 v-model，可能是需要做一些特殊的处理才能正常使用此指令，首先，自定义组件有没有 value 属性或 input 事件，如果没有，则需要进行一些配制，Vue 组件的选项中有一个 model 的选项，可以参考一下:
 
 <https://cn.vuejs.org/v2/guide/components.html#在组件上使用-v-model>
+
 <https://cn.vuejs.org/v2/api/#model>
 
 ### 自定义一个组件
