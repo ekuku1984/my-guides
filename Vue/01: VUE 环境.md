@@ -9,7 +9,7 @@ npm install -g @vue/cli
 vue -V
 ~~~
 
-** 创建一个新工程 **
+**创建一个新工程**
 
 ~~~
 vue create projectName
